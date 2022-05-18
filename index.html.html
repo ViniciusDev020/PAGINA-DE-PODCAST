@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Pod</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/icon.png">
+</head>
+
+
+<body>
+    
+        <div class="header_and_section">
+            <header>
+
+                <img class="icon" src="./assets/icon.png" width="60px">
+                <h1>Pod</h1>
+
+            </header>
+
+            <section>
+
+                <h1>PUBLIQUE SEU PODCAST<br>
+                    <div class="everywhere">EM QUALQUER LUGAR.<div class='bar'>|</div></div>
+                </h1>
+
+                <div onclick="clicksaibamais(this)" id="saibamais">Saiba mais</div>
+
+                <div onclick ='hidesaibamais(this)' id="fecharsaibamais">Fechar</div>
+
+                <p id="paragrafo">Envie seu áudio para Pod em apenas um único clique.<br> Iremos distribuir seu podcast para Spotify,
+                    Apple<br>Podcasts, Google Podcasts, Pocket Casts e muito mais!</p>
+
+                 <form class="form" method="get" action="">   
+
+                <input class='email' type="email" name="email" placeholder="Digite seu e-mail">
+                <input type="submit" name="send" value="PARTICIPAR">
+
+
+
+
+
+                
+                </form>
+
+                    <br>
+                <img  class='margin_logo'src="./assets/spotify.png" width="90px"> 
+                <img  class='apple_logo' src="./assets/apple-icon.png" width="28px">
+                <h6   class="margin_logo">Apple<br>Podcast</h6>
+                <img class="google_logo" src='./assets/google_podcast_icon_135536.png' width="28px">
+                <h6 class="google_podcast">Google<br>Podcast</h6>
+
+                
+            </section>
+
+        </div>
+        
+        <img class="woman" src="./assets/woman.jpg" width="900px">
+
+        <!-- <audio controls>
+            <source src="./shake-it-off.mp3" type="audio/mpeg">
+        </audio> -->
+
+        
+
+
+      <script>
+   
+
+        function clicksaibamais(){
+
+            let p = document.getElementById('paragrafo')
+            let sm= document.getElementById('saibamais')
+            let hs= document.getElementById('fecharsaibamais')
+            p.style.display='inline-block'
+            sm.style.display='none'
+            hs.style.display='block'
+        }
+
+        function hidesaibamais(){
+
+            let p = document.getElementById('paragrafo')
+            let sm= document.getElementById('saibamais')
+            let hs= document.getElementById('fecharsaibamais')
+            hs.style.display='none'
+            p.style.display='none'
+            sm.style.display='block'
+        }
+
+    
+
+
+
+
+      </script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
